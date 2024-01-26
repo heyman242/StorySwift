@@ -5,3 +5,5 @@ export { default as CallToAction } from "./CallToAction";
 export { default as SampleWork } from "./SampleWork";
 export { default as Calendly } from "./Calendly";
 export { default as Footer } from "./Footer";
+export { default as Testimonial } from "./Testimonial";
+export { default as Dms } from "./Dms";

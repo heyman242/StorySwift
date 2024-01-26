@@ -5,7 +5,7 @@ const Home = () => {
       name="home"
       className="bg-gradient-to-b from-black to-black text-white"
     >
-      <div className="mx-auto py-12 px-6">
+      <div className="mx-auto pt-32 py-10 px-6">
         <div>
           <h2 className="flex justify-center text-5xl sm:text-5xl font-bold mb-4">
             How can you
