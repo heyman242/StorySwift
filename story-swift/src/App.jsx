@@ -1,3 +1,4 @@
+"use client";
 import {
   Calendly,
   CallToAction,
@@ -7,7 +8,7 @@ import {
   SampleWork,
   Testimonial,
   Vsl,
-  Dms
+  Dms,
 } from "./components";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -28,7 +29,7 @@ function App() {
       <Vsl />
       <CallToAction />
       <SampleWork />
-      <Dms/>
+      <Dms />
       {/* <Testimonial/> */}
       <Calendly />
       <Footer />
