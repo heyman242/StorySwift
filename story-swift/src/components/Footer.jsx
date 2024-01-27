@@ -65,7 +65,7 @@ const Footer = () => {
           focusRingColor="#1da1f2/55"
           icon={twitter}
           text="Connect on Twitter"
-          //aosAnimation="fade-right"
+          aosAnimation="fade-right"
         />
 
         <SocialButton
@@ -75,7 +75,7 @@ const Footer = () => {
           focusRingColor="#e4405f/55"
           icon={instagram}
           text="Connect on Instagram"
-          //aosAnimation="fade-up"
+          aosAnimation="fade-up"
         />
 
         <SocialButton
@@ -85,7 +85,7 @@ const Footer = () => {
           focusRingColor="#ff0000/55"
           icon={youtube}
           text="Subscribe on YouTube"
-          //aosAnimation="fade-left"
+          aosAnimation="fade-left"
         />
       </div>
     </div>
