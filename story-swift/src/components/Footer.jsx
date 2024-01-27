@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import instagram from "../assets/instagram.svg";
 import youtube from "../assets/youtube.svg";
 import twitter from "../assets/twitter.svg";
@@ -14,11 +14,10 @@ const SocialButton = ({
   text,
   aosAnimation,
 }) => {
-
   return (
     <button
       type="button"
-      className={`text-white bg-black hover:bg-${hoverColor} focus:ring-4 focus:outline-none focus:ring-${focusColor} font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-${focusRingColor} me-2 mb-2`}
+      className={`text-white text-5xl bg-black hover:bg-${hoverColor} focus:ring-4 focus:outline-none focus:ring-${focusColor} font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-${focusRingColor} me-2 mb-2`}
       style={{ backgroundColor: `var(${hoverColor})` }}
       data-aos={aosAnimation}
     >
@@ -29,12 +28,36 @@ const SocialButton = ({
 };
 
 const Footer = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); // Adjust the breakpoint as needed
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <div name="contact" className="mx-auto bg-black text-white py-20 text-center">
-      <p className="text-5xl mb-8">
-        100% REFUND if we don't beat your existing results
+    <div
+      name="contact"
+      className="mx-auto bg-black text-white py-20 text-center"
+    >
+      <p className="text-3xl sm:text-5xl mb-8">
+        <span className="text-amber-500">100% RETURN&nbsp;</span> if we
+        don't <span className="text-amber-500">&nbsp;BEAT </span> your
+        existing{" "}
+        <span className="text-amber-500">&nbsp;RESULT&nbsp;</span>
       </p>
-      <div className="flex justify-center space-x-4">
+      <div
+        className={`flex ${
+          isMobile ? "flex-col items-center" : "justify-center space-x-4"
+        }`}
+      >
         <SocialButton
           color="#1da1f2"
           hoverColor="#1da1f2/90"
@@ -42,7 +65,7 @@ const Footer = () => {
           focusRingColor="#1da1f2/55"
           icon={twitter}
           text="Connect on Twitter"
-          aosAnimation="fade-right"
+          //aosAnimation="fade-right"
         />
 
         <SocialButton
@@ -52,7 +75,7 @@ const Footer = () => {
           focusRingColor="#e4405f/55"
           icon={instagram}
           text="Connect on Instagram"
-          aosAnimation="fade-up"
+          //aosAnimation="fade-up"
         />
 
         <SocialButton
@@ -62,7 +85,7 @@ const Footer = () => {
           focusRingColor="#ff0000/55"
           icon={youtube}
           text="Subscribe on YouTube"
-          aosAnimation="fade-left"
+          //aosAnimation="fade-left"
         />
       </div>
     </div>

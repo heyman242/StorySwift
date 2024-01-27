@@ -1,15 +1,17 @@
-import React from 'react'
+import React from "react";
 
 const Vsl = () => {
+  const isMobile = window.innerWidth <= 768; // Adjust the breakpoint as needed
+
   return (
     <div className="bg-gradient-to-b from-black to-black text-white flex justify-center ">
       <div
         style={{
-          width: "60%",
-          height: "486px",
+          width: isMobile ? "90%" : "60%", // Adjusted width for mobile
+          height: isMobile ? "190px" : "500px", // Adjusted height for mobile
           borderRadius: "15px",
           overflow: "hidden",
-          boxShadow: "1 4px 6px rgb(232, 232, 232)",
+          boxShadow: "1px 4px 6px rgb(232, 232, 232)", // Fixed the boxShadow syntax
         }}
       >
         <iframe
@@ -27,6 +29,6 @@ const Vsl = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Vsl
+export default Vsl;

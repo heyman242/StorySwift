@@ -15,10 +15,6 @@ export const links = [
     id: 4,
     link: "Why us",
   },
-  {
-    id: 5,
-    link: "Book A Discovery Call",
-  },
 ];
 
 export const sampleWork = [

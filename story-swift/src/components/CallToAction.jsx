@@ -7,7 +7,7 @@ const CallToAction = () => {
       <br />
       <div
         className="bg-gradient-to-b from-black to-black flex justify-center text-white text-3xl"
-        data-aos="fade-right"
+        //data-aos="fade-right"
       >
         <Link
           to="Book A Discovery Call"
