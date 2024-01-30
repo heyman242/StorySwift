@@ -19,17 +19,16 @@ const Calendly = () => {
   return (
     <div
       name="Book A Discovery Call"
-      className="flex items-center justify-center bg-gradient-to-b from-black to-black"
+      className="flex items-center justify-center bg-[#231F20]"
     >
       <div
-        className={`shadow-lg rounded-lg overflow-hidden`}
-        // data-aos="fade-right"
+        data-aos="fade-right"
       >
         <InlineWidget
           url="https://calendly.com/himanshu-hb/sample-event"
           styles={{
             height: isMobile ? "800px" : "700px",
-            width: isMobile ? "350px" : "1200px",
+            width: isMobile ? "300px" : "1200px",
           }}
         />
       </div>

@@ -23,7 +23,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="overflow-x-hidden">
       <NavBar />
       <Home />
       <Vsl />
@@ -33,7 +33,7 @@ function App() {
       {/* <Testimonial/> */}
       <Calendly />
       <Footer />
-    </>
+    </div>
   );
 }
 

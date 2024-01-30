@@ -19,11 +19,11 @@ const SampleWork = () => {
   return (
     <div
       name="work"
-      className="bg-gradient-to-b from-black to-black text-white flex justify-center py-20 mx-auto"
+      className="bg-[#231F20] text-[#EFF1F3] flex justify-center py-20 mx-auto"
     >
       <div className="flex flex-col items-center justify-center">
         <div className="relative inline-flex items-center justify-center p-0.5 mb-8 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400">
-          <span className="relative text-2xl px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+          <span className="relative text-2xl px-5 py-2.5 transition-all ease-in duration-75 bg-[#EFF1F3] dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
             Short Form Edits
           </span>
         </div>
@@ -36,6 +36,7 @@ const SampleWork = () => {
             <div
               key={item.id}
               className="rounded-lg overflow-hidden border border-white dark:border-gray-800"
+              data-aos="flip-left"
             >
               <iframe
                 src={item.link}

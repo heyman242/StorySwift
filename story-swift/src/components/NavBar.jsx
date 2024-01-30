@@ -20,7 +20,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <div className="bg-black text-white">
+    <div className="bg-[#231F20] text-[#EFF1F3]">
       <div className="container mx-auto py-4 px-4 md:px-0">
         <div className="flex items-center justify-between">
           <a
@@ -32,7 +32,7 @@ const NavBar = () => {
               className="h-8"
               alt="Flowbite Logo"
             />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-[#EFF1F3]">
               Story Swift
             </span>
           </a>
@@ -45,7 +45,7 @@ const NavBar = () => {
             {links.map(({ id, link }) => (
               <li
                 key={id}
-                className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:text-white transition duration-200"
+                className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:text-[#EFF1F3] transition duration-200"
               >
                 <Link to={link} smooth duration={500}>
                   {link}
@@ -60,7 +60,7 @@ const NavBar = () => {
               spy={true}
               smooth={true}
               duration={500}
-              className="cursor-pointer text-white bg-amber-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-amber-500 dark:hover:bg-amber-700 dark:focus:ring-amber-600"
+              className="cursor-pointer text-[#EFF1F3] bg-[#D4AF37]  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center  dark:focus:ring-amber-600"
             >
               Book A Discovery Call
             </Link>

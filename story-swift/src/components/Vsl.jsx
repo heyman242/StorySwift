@@ -4,14 +4,14 @@ const Vsl = () => {
   const isMobile = window.innerWidth <= 768; // Adjust the breakpoint as needed
 
   return (
-    <div className="bg-gradient-to-b from-black to-black text-white flex justify-center ">
+    <div className="bg-[#231F20] text-[#EFF1F3] flex justify-center ">
       <div
         style={{
           width: isMobile ? "90%" : "60%", // Adjusted width for mobile
           height: isMobile ? "190px" : "500px", // Adjusted height for mobile
           borderRadius: "15px",
           overflow: "hidden",
-          boxShadow: "1px 4px 6px rgb(232, 232, 232)", // Fixed the boxShadow syntax
+          boxShadow: "1px 4px 6px rgb(255, 255, 255)", // Fixed the boxShadow syntax
         }}
       >
         <iframe
