@@ -19,11 +19,9 @@ const Calendly = () => {
   return (
     <div
       name="Book A Discovery Call"
-      className="flex items-center justify-center bg-[#231F20]"
+      className="flex items-center justify-center bg-[#090517ff]"
     >
-      <div
-        data-aos="fade-right"
-      >
+      <div data-aos="fade-right">
         <InlineWidget
           url="https://calendly.com/himanshu-hb/sample-event"
           styles={{

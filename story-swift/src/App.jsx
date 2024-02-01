@@ -19,17 +19,18 @@ function App() {
     AOS.init({
       duration: 1000,
       offset: 120,
+      once: true,
     });
   }, []);
 
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-hidden ">
       <NavBar />
       <Home />
       <Vsl />
       <CallToAction />
-      <SampleWork />
       <Dms />
+      <SampleWork />
       {/* <Testimonial/> */}
       <Calendly />
       <Footer />

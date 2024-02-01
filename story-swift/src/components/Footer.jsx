@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import instagram from "../assets/instagram.svg";
 import youtube from "../assets/youtube.svg";
 import twitter from "../assets/twitter.svg";
+import mail from "../assets/mail.svg";
+import whatsapp from "../assets/whatsapp.svg";
 
 const Footer = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); // Adjust the breakpoint as needed
@@ -20,13 +21,13 @@ const Footer = () => {
 
   return (
     <div
-      name="contact"
-      className="mx-auto bg-[#231F20] text-[#EFF1F3] py-20 text-center"
+      name="Contact"
+      className="mx-auto bg-[#090517ff] text-[#fdfcde] py-20 text-center"
     >
       <p className="text-3xl sm:text-5xl mb-8">
-        <span className="text-[#D4AF37]">100% RETURN&nbsp;</span> if we don't{" "}
-        <span className="text-[#D4AF37]">&nbsp;BEAT </span> your existing{" "}
-        <span className="text-[#D4AF37]">&nbsp;RESULT&nbsp;</span>
+        <span className="text-[#fce54d]">100% RETURN&nbsp;</span> if we don't{" "}
+        <span className="text-[#fce54d]">&nbsp;BEAT </span> your existing{" "}
+        <span className="text-[#fce54d]">&nbsp;RESULT&nbsp;</span>
       </p>
       <div
         className={`flex ${
@@ -35,7 +36,7 @@ const Footer = () => {
       >
         {/* Twitter Button */}
         <button
-          className="text-[#EFF1F3] bg-[#1da1f2] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-#1da1f2/55 me-2 mb-2"
+          className="text-[#fdfcde] bg-[#1da1f2] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-#1da1f2/55 me-2 mb-2"
           data-aos="fade-right"
         >
           <img
@@ -48,8 +49,8 @@ const Footer = () => {
 
         {/* YouTube Button */}
         <button
-          className="text-[#EFF1F3] bg-[#ff0000] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-#ff0000/55 me-2 mb-2"
-          data-aos="fade-left"
+          className="text-[#fdfcde] bg-[#ff0000] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-#ff0000/55 me-2 mb-2"
+          data-aos="fade-down"
         >
           <img
             src={youtube}
@@ -57,6 +58,28 @@ const Footer = () => {
             className="img main-img mr-2"
           />
           Subscribe on YouTube
+        </button>
+        <button
+          className="text-[#fdfcde] bg-[#25d366] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-#ff0000/55 me-2 mb-2"
+          data-aos="fade-down"
+        >
+          <img
+            src={whatsapp}
+            alt="Subscribe on YouTube"
+            className="img main-img mr-2"
+          />
+          Connect on Whatsapp
+        </button>
+        <button
+          className="text-[#fdfcde] bg-[#ff0000] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-#ff0000/55 me-2 mb-2"
+          data-aos="fade-left"
+        >
+          <img
+            src={mail}
+            alt="Subscribe on YouTube"
+            className="img main-img mr-2"
+          />
+          Connect on Mail
         </button>
       </div>
     </div>

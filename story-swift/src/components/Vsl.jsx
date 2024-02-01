@@ -4,7 +4,7 @@ const Vsl = () => {
   const isMobile = window.innerWidth <= 768; // Adjust the breakpoint as needed
 
   return (
-    <div className="bg-[#231F20] text-[#EFF1F3] flex justify-center ">
+    <div className="bg-[#090517ff] text-[#f5ebdcff] flex justify-center ">
       <div
         style={{
           width: isMobile ? "90%" : "60%", // Adjusted width for mobile

@@ -1,19 +1,19 @@
 export const links = [
   {
     id: 1,
-    link: "home",
+    link: "Home",
   },
   {
     id: 2,
-    link: "work",
-  },
-  {
-    id: 3,
     link: "Testimonials",
   },
   {
+    id: 3,
+    link: "Work",
+  },
+  {
     id: 4,
-    link: "Why us",
+    link: "Contact",
   },
 ];
 

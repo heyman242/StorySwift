@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { links } from "../constants";
+import main from '../assets/main.svg'
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -20,19 +21,15 @@ const NavBar = () => {
   }, []);
 
   return (
-    <div className="bg-[#231F20] text-[#EFF1F3]">
+    <div className="bg-[#090517ff] text-[#f5ebdcff]">
       <div className="container mx-auto py-4 px-4 md:px-0">
         <div className="flex items-center justify-between">
           <a
-            href="https://flowbite.com/"
+            href=""
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              className="h-8"
-              alt="Flowbite Logo"
-            />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-[#EFF1F3]">
+            <img src={main} className="h-8" alt="Flowbite Logo" />
+            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-[#ffffff]">
               Story Swift
             </span>
           </a>
@@ -45,7 +42,7 @@ const NavBar = () => {
             {links.map(({ id, link }) => (
               <li
                 key={id}
-                className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:text-[#EFF1F3] transition duration-200"
+                className="px-4 cursor-pointer capitalize font-medium text-gray-100 hover:text-[#fdfcde] hover:scale-110 transition duration-200"
               >
                 <Link to={link} smooth duration={500}>
                   {link}
@@ -60,7 +57,7 @@ const NavBar = () => {
               spy={true}
               smooth={true}
               duration={500}
-              className="cursor-pointer text-[#EFF1F3] bg-[#D4AF37]  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center  dark:focus:ring-amber-600"
+              className="cursor-pointer text-[#f5ebdcff] bg-[#a62321ff]  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center  dark:focus:ring-amber-600"
             >
               Book A Discovery Call
             </Link>
@@ -68,7 +65,7 @@ const NavBar = () => {
 
           <div
             onClick={() => setNav(!nav)}
-            className="cursor-pointer text-gray-500 md:hidden"
+            className="cursor-pointer text-[#ffffff] md:hidden"
           >
             {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
           </div>

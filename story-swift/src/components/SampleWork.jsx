@@ -18,8 +18,8 @@ const SampleWork = () => {
 
   return (
     <div
-      name="work"
-      className="bg-[#231F20] text-[#EFF1F3] flex justify-center py-20 mx-auto"
+      name="Work"
+      className="bg-[#090517ff] text-[#f5ebdcff] flex justify-center py-20 mx-auto"
     >
       <div className="flex flex-col items-center justify-center">
         <div className="relative inline-flex items-center justify-center p-0.5 mb-8 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400">
