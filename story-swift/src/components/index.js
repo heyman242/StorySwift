@@ -7,3 +7,5 @@ export { default as Calendly } from "./Calendly";
 export { default as Footer } from "./Footer";
 export { default as Testimonial } from "./Testimonial";
 export { default as Dms } from "./Dms";
+export { default as YourWork } from "./YourWork";
+export { default as SocialLinks } from "./SocialLinks";

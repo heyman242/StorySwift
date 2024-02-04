@@ -9,6 +9,8 @@ import {
   Testimonial,
   Vsl,
   Dms,
+  YourWork,
+  SocialLinks,
 } from "./components";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -32,8 +34,10 @@ function App() {
       <Dms />
       <SampleWork />
       {/* <Testimonial/> */}
+      <YourWork/>
       <Calendly />
       <Footer />
+      <SocialLinks/>
     </div>
   );
 }

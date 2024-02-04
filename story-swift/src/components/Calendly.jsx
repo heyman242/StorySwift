@@ -21,14 +21,23 @@ const Calendly = () => {
       name="Book A Discovery Call"
       className="flex items-center justify-center bg-[#090517ff]"
     >
-      <div data-aos="fade-right">
-        <InlineWidget
-          url="https://calendly.com/himanshu-hb/sample-event"
-          styles={{
-            height: isMobile ? "800px" : "700px",
-            width: isMobile ? "300px" : "1200px",
-          }}
-        />
+      <div>
+        <div className="flex justify-center text-white text-3xl sm:text-5xl">
+          Become &nbsp;
+          <span className="text-[#fce54d] underline">OmniPresent</span>&nbsp; on
+          all&nbsp;
+          <span className="text-[#fce54d] underline">Social Media</span> &nbsp;
+          Platform
+        </div>
+        <div data-aos="fade-right">
+          <InlineWidget
+            url="https://calendly.com/himanshu-hb/sample-event"
+            styles={{
+              height: isMobile ? "800px" : "700px",
+              width: isMobile ? "300px" : "1200px",
+            }}
+          />
+        </div>
       </div>
     </div>
   );

@@ -21,7 +21,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <div className="bg-[#090517ff] text-[#f5ebdcff]">
+    <div className="bg-[#090517ff] text-[#ffffff]">
       <div className="container mx-auto py-4 px-4 md:px-0">
         <div className="flex items-center justify-between">
           <a
@@ -57,7 +57,7 @@ const NavBar = () => {
               spy={true}
               smooth={true}
               duration={500}
-              className="cursor-pointer text-[#f5ebdcff] bg-[#a62321ff]  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center  dark:focus:ring-amber-600"
+              className="cursor-pointer text-[#ffffff] bg-[#a62321ff]  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center  dark:focus:ring-amber-600"
             >
               Book A Discovery Call
             </Link>
