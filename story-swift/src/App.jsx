@@ -11,6 +11,11 @@ import {
   Dms,
   YourWork,
   SocialLinks,
+  NewTestimonials,
+  HowItWorks,
+  Team,
+  Thumbnails,
+  Offer,
 } from "./components";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -19,25 +24,32 @@ import { useEffect } from "react";
 function App() {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
-      offset: 120,
-      once: true,
+      duration: 3000,
+      offset: 200,
     });
   }, []);
 
   return (
-    <div className="overflow-x-hidden ">
+    <div className="overflow-x-hidden bg-[#090517ff] ">
       <NavBar />
       <Home />
       <Vsl />
+      <br />
+      <br />
       <CallToAction />
       <Dms />
+      <Offer />
+      <CallToAction />
       <SampleWork />
-      {/* <Testimonial/> */}
-      <YourWork/>
+      <HowItWorks />
+      {/* <Testimonial /> */}
+      {/* <YourWork /> */}
+      <Team />
       <Calendly />
+      {/* <NewTestimonials /> */}
       <Footer />
-      <SocialLinks/>
+      {/* <Thumbnails /> */}
+      <SocialLinks />
     </div>
   );
 }

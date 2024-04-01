@@ -9,3 +9,8 @@ export { default as Testimonial } from "./Testimonial";
 export { default as Dms } from "./Dms";
 export { default as YourWork } from "./YourWork";
 export { default as SocialLinks } from "./SocialLinks";
+export { default as NewTestimonials } from "./NewTestimonials";
+export { default as HowItWorks } from "./HowItWorks";
+export { default as Team } from "./Team";
+export { default as Thumbnails } from "./Thumbnails";
+export { default as Offer } from "./Offer";

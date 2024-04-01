@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { sampleWork } from "../constants";
+import { shortForm, longForm, thumbnails } from "../constants";
+import { CarouselProvider, Slider, Slide, DotGroup } from "pure-react-carousel";
+import "pure-react-carousel/dist/react-carousel.es.css";
+import "./css/SampleWorkCarousel.css";
 
 const SampleWork = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); // Adjust the breakpoint as needed
@@ -19,20 +22,26 @@ const SampleWork = () => {
   return (
     <div
       name="Work"
-      className="bg-[#090517ff] text-[#f5ebdcff] flex justify-center py-20 mx-auto"
+      className="bg-[#090517ff] text-[#f5ebdcff] flex justify-center mx-auto"
     >
       <div className="flex flex-col items-center justify-center">
-        <div className="relative inline-flex items-center justify-center p-0.5 mb-8 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400">
-          <span className="relative text-2xl px-5 py-2.5 transition-all ease-in duration-75 bg-[#EFF1F3] dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-            Short Form Edits
-          </span>
-        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold px-4 leading-10 text-white  text-center">
+          Short From Videos
+        </h1>
+        <br />
+        <br />
         <div
           className={`grid grid-cols-${
             isMobile ? "1" : "3"
-          } gap-8 md:grid-cols-3`}
+          } gap-6 md:grid-cols-3`}
         >
-          {sampleWork.map((item, index) => (
+          {shortForm.map((item, index) => (
             <div
               key={item.id}
               className="rounded-lg overflow-hidden border border-white dark:border-gray-800"
@@ -44,12 +53,85 @@ const SampleWork = () => {
                 width="100%"
                 height={isMobile ? "530" : "530"} // Adjusted height for mobile
                 frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="accelerometer autoplay clipboard-write encrypted-media gyroscope picture-in-picture web-share"
                 allowFullScreen
               ></iframe>
             </div>
           ))}
         </div>
+        {/* <br />
+        <br />
+        <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold px-4 leading-10 text-white  text-center">
+          Long From Videos
+        </h1>
+        <br />
+        <br />
+        <div
+          className={`grid grid-cols-${
+            isMobile ? "1" : "2"
+          } gap-6 md:grid-cols-2`}
+          style={{
+            width: isMobile ? "100px" : "1500px", // Adjusted width for mobile
+            height: isMobile ? "300px" : "414px", // Adjusted height for mobile
+          }}
+        >
+          {longForm.map((item, index) => (
+            <div
+              key={item.id}
+              className="rounded-lg overflow-hidden border border-white dark:border-gray-800"
+              data-aos="flip-left"
+            >
+              <iframe
+                src={item.link}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                }}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                title=""
+              ></iframe>
+            </div>
+          ))}
+        </div>
+
+        <br />
+        <br />
+        <div className="flex flex-col items-center justify-center">
+          <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold px-4 leading-10 text-white  text-center">
+            Thumbnails
+          </h1>
+          <br />
+          <br />
+          <div className="carousel">
+            <CarouselProvider
+              naturalSlideWidth={100}
+              isIntrinsicHeight={true}
+              totalSlides={thumbnails.length} // Total slides based on thumbnails data length
+              visibleSlides={1} // Adjust the number of visible slides per view
+              step={1}
+              infinite={true}
+              isPlaying={true} // Enable auto-sliding
+              interval={3000}
+            >
+              <div className="w-full relative">
+                <Slider>
+                  {thumbnails.map((image, index) => (
+                    <Slide key={index} index={index}>
+                      <div className="flex justify-center items-center">
+                        <img
+                          src={image.link}
+                          alt={`Slide ${index + 1}`}
+                          className="object-cover object-center w-6/12 h-2/5" // Adjust the width and height as needed
+                        />
+                      </div>
+                    </Slide>
+                  ))}
+                </Slider>
+                <DotGroup className="carousel__dot-group" />
+              </div>
+            </CarouselProvider>
+          </div>
+        </div> */}
       </div>
     </div>
   );

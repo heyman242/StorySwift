@@ -1,10 +1,9 @@
-import React from 'react'
+import React from "react";
 import { Link } from "react-scroll";
 
 const CallToAction = () => {
   return (
     <div className="bg-[#090517ff] ">
-      <br />
       <div
         className="bg-[#090517ff] flex justify-center text-[#ffffff] text-3xl"
         data-aos="fade-right"
@@ -20,6 +19,6 @@ const CallToAction = () => {
       </div>
     </div>
   );
-}
+};
 
-export default CallToAction
+export default CallToAction;

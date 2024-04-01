@@ -22,7 +22,7 @@ const Footer = () => {
   return (
     <div
       name="Contact"
-      className="mx-auto bg-[#090517ff] text-[#ffffff] py-20 text-center"
+      className="mx-auto bg-[#090517ff] text-[#ffffff] py-8 text-center"
     >
       <p className="text-3xl sm:text-5xl mb-8">
         <span className="text-[#fce54d]">100% RETURN&nbsp;</span> if we don't{" "}
