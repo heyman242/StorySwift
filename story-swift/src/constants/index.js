@@ -26,18 +26,18 @@ export const shortForm = [
     id: 3,
     link: "https://player.cloudinary.com/embed/?public_id=qo7ow2uz7rfotpk03mcd&cloud_name=dqdu2vnxa&player[muted]=true&player[posterOptions][transformation][startOffset]=0&player[autoplayMode]=on-scroll&player[autoplay]=true&player[loop]=true",
   },
-  // {
-  //   id: 4,
-  //   link: "https://player.cloudinary.com/embed/?public_id=tqc0dyqe9hri6j5mhzzk&cloud_name=dqdu2vnxa&player[muted]=true&player[posterOptions][transformation][startOffset]=0&player[autoplayMode]=on-scroll&player[autoplay]=true&player[loop]=true",
-  // },
-  // {
-  //   id: 5,
-  //   link: "https://player.cloudinary.com/embed/?public_id=nbwe8hmdlgwll9vwquao&cloud_name=dqdu2vnxa&player[muted]=true&player[posterOptions][transformation][startOffset]=0&player[autoplayMode]=on-scroll&player[autoplay]=true&player[loop]=true",
-  // },
-  // {
-  //   id: 6,
-  //   link: "https://player.cloudinary.com/embed/?public_id=qo7ow2uz7rfotpk03mcd&cloud_name=dqdu2vnxa&player[muted]=true&player[posterOptions][transformation][startOffset]=0&player[autoplayMode]=on-scroll&player[autoplay]=true&player[loop]=true",
-  // },
+  {
+    id: 4,
+    link: "https://player.cloudinary.com/embed/?public_id=yx37u0ljnq51owwolull&cloud_name=dqdu2vnxa&player[muted]=true&player[posterOptions][transformation][startOffset]=0&player[autoplayMode]=on-scroll&player[autoplay]=true&player[loop]=true",
+  },
+  {
+    id: 5,
+    link: "https://player.cloudinary.com/embed/?public_id=ccngusdhmgzbk5fxlo7t&cloud_name=dqdu2vnxa&player[muted]=true&player[posterOptions][transformation][startOffset]=0&player[autoplayMode]=on-scroll&player[autoplay]=true&player[loop]=true",
+  },
+  {
+    id: 6,
+    link: "https://player.cloudinary.com/embed/?public_id=lupfbx4twf6wdminiapr&cloud_name=dqdu2vnxa&player[muted]=true&player[posterOptions][transformation][startOffset]=0&player[autoplayMode]=on-scroll&player[autoplay]=true&player[loop]=true",
+  },
 ];
 
 export const longForm = [
