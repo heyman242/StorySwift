@@ -4,7 +4,7 @@ import image2 from "../assets/thumbnail.png";
 import image3 from "../assets/script.png";
 
 const Offer = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); // Adjust the breakpoint as needed
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
     const handleResize = () => {
@@ -37,9 +37,9 @@ const Offer = () => {
         <div
           className={`grid ${isMobile ? "grid-cols-1" : "grid-cols-3"} gap-2`}
         >
-          <div>
+          <div className="">
             <img
-              className="h-6/12 w-full rounded-lg"
+              className=" h-6/12 w-6-12 rounded-lg"
               src={image1}
               alt=""
               data-aos="fade-right"
@@ -47,7 +47,7 @@ const Offer = () => {
           </div>
           <div>
             <img
-              className="h-6/12 w-6-12 rounded-lg"
+              className="grow-0 h-6/12 w-6-12 rounded-lg"
               src={image2}
               alt=""
               data-aos="fade-up"
@@ -55,13 +55,16 @@ const Offer = () => {
           </div>
           <div>
             <img
-              className="h-6/12 w-full rounded-lg"
+              className=" grow-0 h-6/12 w-full rounded-lg"
               src={image3}
               alt=""
               data-aos="fade-left"
             />
           </div>
         </div>
+        <br />
+        <br />
+        <br />
       </div>
     </div>
   );

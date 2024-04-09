@@ -9,12 +9,9 @@ const Home = () => {
       <div className="mx-auto pt-10 sm:pt-10 py-10 px-6">
         <div>
           <h2 className="text-center text-3xl sm:text-5xl font-bold mb-4">
-            We help you get
-            <span className="text-[#fce54d]">
-              &nbsp;Qualified Leads&nbsp;
-            </span>{" "}
-            and
-            <span className="text-[#fce54d]">&nbsp;Targeted Views&nbsp;</span>
+            We double
+            <span className="text-[#fce54d]">&nbsp;Your Views&nbsp;</span> in
+            <span className="text-[#fce54d]">&nbsp;30 Days&nbsp;</span>
           </h2>
           <h2 className="text-center text-3xl sm:text-5xl font-bold mb-4">
             with
