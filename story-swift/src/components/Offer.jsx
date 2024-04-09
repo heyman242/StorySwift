@@ -47,7 +47,7 @@ const Offer = () => {
           </div>
           <div>
             <img
-              className="h-6/12 w-full rounded-lg"
+              className="h-6/12 w-6-12 rounded-lg"
               src={image2}
               alt=""
               data-aos="fade-up"

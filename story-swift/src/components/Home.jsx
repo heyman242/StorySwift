@@ -10,12 +10,17 @@ const Home = () => {
         <div>
           <h2 className="text-center text-3xl sm:text-5xl font-bold mb-4">
             We help you get
-            <span className="text-[#fce54d]">&nbsp;More Views&nbsp;</span> and
-            <span className="text-[#fce54d]">&nbsp;Qualified Leads&nbsp;</span>
+            <span className="text-[#fce54d]">
+              &nbsp;Qualified Leads&nbsp;
+            </span>{" "}
+            and
+            <span className="text-[#fce54d]">&nbsp;Targeted Views&nbsp;</span>
           </h2>
           <h2 className="text-center text-3xl sm:text-5xl font-bold mb-4">
             with
-            <span className="text-[#fce54d]">&nbsp;Video Content&nbsp;</span>
+            <span className="text-[#fce54d]">
+              &nbsp;Organic Video Content&nbsp;
+            </span>
             guaranteed
           </h2>
           <h2 className="text-center text-3xl sm:text-5xl font-bold mb-4">

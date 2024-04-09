@@ -53,7 +53,7 @@ const SampleWork = () => {
                 width="100%"
                 height={isMobile ? "530" : "530"} // Adjusted height for mobile
                 frameBorder="0"
-                allow="accelerometer autoplay clipboard-write encrypted-media gyroscope picture-in-picture web-share"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
                 allowFullScreen
               ></iframe>
             </div>
