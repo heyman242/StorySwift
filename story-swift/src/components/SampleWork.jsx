@@ -3,6 +3,7 @@ import { shortForm, longForm, thumbnails } from "../constants";
 import { CarouselProvider, Slider, Slide, DotGroup } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import "./css/SampleWorkCarousel.css";
+import { Link } from "react-router-dom";
 
 const SampleWork = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); // Adjust the breakpoint as needed
@@ -59,6 +60,15 @@ const SampleWork = () => {
             </div>
           ))}
         </div>
+        <br />
+        <br />
+        <Link
+          to="/portfolio"
+          className="inline-block bg-[#a62321ff] py-3 px-8 rounded-xl text-lg font-semibold text-white uppercase tracking-wide hover:text-[#ffffff] hover:bg-[#8e1f1c] transform transition duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#a62321ff] focus:ring-opacity-50"
+        >
+          Show More
+        </Link>
+
         {/* <br />
         <br />
         <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold px-4 leading-10 text-white  text-center">

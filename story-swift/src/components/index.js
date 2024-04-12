@@ -14,3 +14,5 @@ export { default as HowItWorks } from "./HowItWorks";
 export { default as Team } from "./Team";
 export { default as Thumbnails } from "./Thumbnails";
 export { default as Offer } from "./Offer";
+export { default as HomeLayout } from "./HomeLayout";
+export { default as Portfolio } from "./Portfolio";

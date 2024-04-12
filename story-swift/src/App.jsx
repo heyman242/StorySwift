@@ -1,25 +1,20 @@
-"use client";
-import {
-  Calendly,
-  CallToAction,
-  Footer,
-  Home,
-  NavBar,
-  SampleWork,
-  Testimonial,
-  Vsl,
-  Dms,
-  YourWork,
-  SocialLinks,
-  NewTestimonials,
-  HowItWorks,
-  Team,
-  Thumbnails,
-  Offer,
-} from "./components";
+import React from "react";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { HomeLayout, Portfolio } from "./components";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomeLayout />,
+  },
+  {
+    path: "/portfolio",
+    element: <Portfolio />,
+  },
+]);
 
 function App() {
   useEffect(() => {
@@ -29,29 +24,7 @@ function App() {
     });
   }, []);
 
-  return (
-    <div className="overflow-x-hidden bg-[#090517ff] ">
-      <NavBar />
-      <Home />
-      <Vsl />
-      <br />
-      <br />
-      <CallToAction />
-      <Dms />
-      <Offer />
-      <CallToAction />
-      <SampleWork />
-      <HowItWorks />
-      {/* <Testimonial /> */}
-      {/* <YourWork /> */}
-      <Team />
-      <Calendly />
-      {/* <NewTestimonials /> */}
-      <Footer />
-      {/* <Thumbnails /> */}
-      <SocialLinks />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
