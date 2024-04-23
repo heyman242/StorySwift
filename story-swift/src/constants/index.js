@@ -13,6 +13,7 @@ export const links = [
   },
 ];
 
+//this is the short form for the main page
 export const shortForm = [
   {
     id: 1,
@@ -24,11 +25,11 @@ export const shortForm = [
   },
   {
     id: 3,
-    link: "https://player.cloudinary.com/embed/?public_id=qo7ow2uz7rfotpk03mcd&cloud_name=dqdu2vnxa&player[muted]=true&player[posterOptions][transformation][startOffset]=0&player[autoplayMode]=on-scroll&player[autoplay]=true&player[loop]=true",
+    link: "https://player.vimeo.com/video/933667303?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&autoplay=1&muted=1&loop=1&autopause=0",
   },
   {
     id: 4,
-    link: "https://player.cloudinary.com/embed/?public_id=yx37u0ljnq51owwolull&cloud_name=dqdu2vnxa&player[muted]=true&player[posterOptions][transformation][startOffset]=0&player[autoplayMode]=on-scroll&player[autoplay]=true&player[loop]=true",
+    link: "https://player.vimeo.com/video/930375202?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&autoplay=1&muted=1&loop=1&autopause=0",
   },
   {
     id: 5,
@@ -36,7 +37,7 @@ export const shortForm = [
   },
   {
     id: 6,
-    link: "https://player.cloudinary.com/embed/?public_id=nbwe8hmdlgwll9vwquao&cloud_name=dqdu2vnxa&player[muted]=true&player[posterOptions][transformation][startOffset]=0&player[autoplayMode]=on-scroll&player[autoplay]=true&player[loop]=true",
+    link: "https://player.vimeo.com/video/933667335?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&autoplay=1&muted=1&loop=1&autopause=0",
   },
 ];
 
@@ -70,6 +71,7 @@ export const thumbnails = [
   },
 ];
 
+// this is the short form for the portfolio page
 export const work = [
   {
     id: 1,

@@ -9,21 +9,22 @@ const Home = () => {
       <div className="mx-auto pt-10 sm:pt-10 py-10 px-6">
         <div>
           <h2 className="text-center text-3xl sm:text-5xl font-bold mb-4">
-            We double
-            <span className="text-[#fce54d]">&nbsp;Your Views&nbsp;</span> in
-            <span className="text-[#fce54d]">&nbsp;30 Days&nbsp;</span>
+            We Will Deliver{" "}
+            <span className="text-[#fce54d] underline">
+              UNLIMITED SHORT FORM CONTENT
+            </span>{" "}
+            {/* <span className="text-[#fce54d]">&nbsp;30 Days&nbsp;</span> */}
           </h2>
           <h2 className="text-center text-3xl sm:text-5xl font-bold mb-4">
-            with
-            <span className="text-[#fce54d]">
+            Every Single Month
+            {/* <span className="text-[#fce54d]">
               &nbsp;Organic Video Content&nbsp;
-            </span>
-            guaranteed
+            </span> */}
           </h2>
-          <h2 className="text-center text-3xl sm:text-5xl font-bold mb-4">
+          {/* <h2 className="text-center text-3xl sm:text-5xl font-bold mb-4">
             or you get a
             <span className="text-[#fce54d]">&nbsp;full refund</span>
-          </h2>
+          </h2> */}
           <p className="text-center text-2xl text-[#f5c947] mb-4">
             Without you having any experience on camera or scripting a single
             line.
