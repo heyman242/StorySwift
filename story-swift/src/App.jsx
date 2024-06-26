@@ -19,7 +19,7 @@ const router = createBrowserRouter([
 function App() {
   useEffect(() => {
     AOS.init({
-      duration: 3000,
+      duration: 1000,
       offset: 200,
     });
   }, []);
