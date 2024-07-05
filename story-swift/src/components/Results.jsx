@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import image1 from "../assets/1.png";
-import image2 from "../assets/3.png";
+import image1 from "../assets/4.png";
+import image2 from "../assets/2.png";
 import image3 from "../assets/3.png";
 import image4 from "../assets/4.png";
 
-const Dms = () => {
+const Results = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); // Adjust the breakpoint as needed
 
   useEffect(() => {
@@ -26,7 +26,7 @@ const Dms = () => {
     >
       <div className="flex flex-col items-center justify-center px-20 py-4">
         <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold px-4 leading-10 text-white  text-center">
-          What Our Client Has To Say!
+          Results
         </h1>
         <br />
         <br />
@@ -72,4 +72,4 @@ const Dms = () => {
   );
 };
 
-export default Dms;
+export default Results;

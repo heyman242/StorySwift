@@ -14,7 +14,7 @@ const Vsl = () => {
         }}
       >
         <WistiaPlayer
-          videoId="vwyskdan8n"
+          videoId="uj3ezczwdq"
           wrapper="wistia-player-container-1"
         />
       </div>

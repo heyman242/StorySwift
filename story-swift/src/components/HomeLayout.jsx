@@ -7,6 +7,7 @@ import {
   NavBar,
   SampleWork,
   Testimonial,
+  Results,
   Vsl,
   Dms,
   YourWork,
@@ -27,6 +28,7 @@ const HomeLayout = () => {
       <br />
       <br />
       <CallToAction />
+      <Results />
       <Dms />
       <Offer />
       <CallToAction />
@@ -41,7 +43,7 @@ const HomeLayout = () => {
       {/* <NewTestimonials /> */}
       <Footer />
       {/* <Thumbnails /> */}
-      <SocialLinks />
+      {/* <SocialLinks /> */}
     </div>
   );
 };

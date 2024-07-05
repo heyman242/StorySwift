@@ -99,10 +99,7 @@ const Team = () => {
                     Systems.
                   </p>
                   <div className="w-full flex justify-center pt-5 pb-5">
-                    <a
-                      href="https://twitter.com/FunnelHackerHB"
-                      className="mx-5"
-                    >
+                    <a href="https://x.com/hvnterhimanshu" className="mx-5">
                       <div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
