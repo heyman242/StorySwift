@@ -30,7 +30,7 @@ const Portfolio = () => {
         <div
           className={`grid grid-cols-${
             isMobile ? "1" : "3"
-          } gap-6 md:grid-cols-3`}
+          } gap-6 md:grid-cols-4`}
         >
           {work.map((item, index) => (
             <div
@@ -42,7 +42,7 @@ const Portfolio = () => {
                 src={item.link}
                 title={`Sample Work ${index + 1}`}
                 width="100%"
-                height={isMobile ? "500" : "645"}
+                height={isMobile ? "500" : "480"}
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
                 allowFullScreen
