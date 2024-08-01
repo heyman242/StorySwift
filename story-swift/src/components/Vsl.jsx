@@ -8,7 +8,7 @@ const Vsl = () => {
     <div className="bg-[#090517ff] text-[#f5ebdcff] flex justify-center ">
       <div
         style={{
-          width: "75%",
+          width: "60%",
           height: "100%",
           overflow: "hidden",
         }}
