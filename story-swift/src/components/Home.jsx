@@ -17,7 +17,7 @@ const Home = () => {
             {/* <span className="text-[#fce54d]">&nbsp;30 Days&nbsp;</span> */}
           </h2>
           <h2 className="text-center text-2xl sm:text-4xl font-bold mb-4">
-            through a YouTube Sales Funnel
+            through a YouTube Content Funnel
             {/* <span className="text-[#fce54d]">
               &nbsp;Organic Video Content&nbsp;
             </span> */}
