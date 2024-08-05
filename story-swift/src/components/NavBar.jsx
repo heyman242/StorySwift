@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { links } from "../constants";
-import main from '../assets/main.svg'
+import main from "../assets/main.svg";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -22,7 +22,7 @@ const NavBar = () => {
 
   return (
     <div className="bg-[#090517ff] text-[#ffffff]">
-      <div className="container mx-auto py-4 px-4 md:px-0">
+      <div className="container mx-auto py-8 md:px-60">
         <div className="flex items-center justify-between">
           <a
             href=""
