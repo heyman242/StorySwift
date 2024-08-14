@@ -182,3 +182,14 @@ export const work = [
     link: "https://player.cloudinary.com/embed/?public_id=yx37u0ljnq51owwolull&cloud_name=dqdu2vnxa&player[muted]=true&player[posterOptions][transformation][startOffset]=0&player[autoplayMode]=on-scroll&player[autoplay]=true&player[loop]=true",
   },
 ];
+
+export const longform = [
+  {
+    id: 1,
+    embedId: "rpaVaSmr5bI",
+  },
+  {
+    id: 2,
+    embedId: "4Isx2YhJulA",
+  },
+];

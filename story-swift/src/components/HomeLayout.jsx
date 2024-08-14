@@ -17,6 +17,7 @@ import {
   Team,
   Thumbnails,
   Offer,
+  LongForm,
 } from "./index";
 
 const HomeLayout = () => {
@@ -31,6 +32,7 @@ const HomeLayout = () => {
       <Results />
       <Dms />
       <Offer />
+      <LongForm />
       <CallToAction />
       <SampleWork />
       <br />
