@@ -4,10 +4,7 @@ import { Link } from "react-scroll";
 const CallToAction = () => {
   return (
     <div className="bg-[#090517ff] ">
-      <div
-        className="bg-[#090517ff] flex flex-col items-center text-[#ffffff] text-3xl"
-        data-aos="fade-right"
-      >
+      <div className="bg-[#090517ff] flex flex-col items-center text-[#ffffff] text-3xl">
         <Link
           to="Book A Discovery Call"
           smooth
@@ -16,9 +13,9 @@ const CallToAction = () => {
         >
           Book A Discovery Call
         </Link>
-        <p className="text-center text-xl text-[#f5c947] mt-4">
+        {/* <p className="text-center text-xl text-[#f5c947] mt-4">
           And get a Video Edited, Thumbnail and a Video Script (For Free).
-        </p>
+        </p> */}
       </div>
     </div>
   );

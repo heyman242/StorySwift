@@ -28,9 +28,6 @@ const SampleWork = () => {
       <div className="flex flex-col items-center justify-center">
         <br />
         <br />
-        <br />
-        <br />
-        <br />
 
         <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold px-4 leading-10 text-white  text-center">
           Short From Videos

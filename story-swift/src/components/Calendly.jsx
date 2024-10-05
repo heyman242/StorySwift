@@ -21,9 +21,9 @@ const Calendly = () => {
       name="Book A Discovery Call"
       className="flex items-center justify-center bg-[#090517ff]"
     >
-      <div className="py-12">
+      <div className="py-6">
         <div className="flex justify-center text-white text-3xl sm:text-5xl">
-          Book a FREE Call, To Get Started!
+          Get Your First Video Done COMPLETELY For Free!
         </div>
         <div data-aos="fade-right">
           <InlineWidget

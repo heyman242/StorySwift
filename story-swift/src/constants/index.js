@@ -187,9 +187,29 @@ export const longform = [
   {
     id: 1,
     embedId: "rpaVaSmr5bI",
+    name: "Nathan Hirsch",
+    title: "Co-Founder @ Outsource School",
+    fade: "fade-right",
   },
   {
     id: 2,
     embedId: "4Isx2YhJulA",
+    name: "Mark Mei",
+    title: "Founder @ Dahaus Digital",
+    fade: "fade-left",
+  },
+  {
+    id: 3,
+    embedId: "IM4AUE1PQaA",
+    name: "Zach Schieffer",
+    title: "Founder @ ZHS Ecom",
+    fade: "fade-right",
+  },
+  {
+    id: 4,
+    embedId: "Ja9OpaNsNrc",
+    name: "Alexan Zartarian ",
+    title: "Founder @ Sparklead",
+    fade: "fade-left",
   },
 ];

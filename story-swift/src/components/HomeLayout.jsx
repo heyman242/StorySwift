@@ -18,6 +18,8 @@ import {
   Thumbnails,
   Offer,
   LongForm,
+  Faq1,
+  Team1,
 } from "./index";
 
 const HomeLayout = () => {
@@ -31,8 +33,9 @@ const HomeLayout = () => {
       <CallToAction />
       <Results />
       <Dms />
-      <Offer />
+      {/* <Offer /> */}
       <LongForm />
+      <Thumbnails />
       <CallToAction />
       <SampleWork />
       <br />
@@ -40,11 +43,13 @@ const HomeLayout = () => {
       <HowItWorks />
       {/* <Testimonial /> */}
       {/* <YourWork /> */}
-      <Team />
+      {/* <Team /> */}
+      <Team1 />
+      {/* <Faq1 /> */}
       <Calendly />
       {/* <NewTestimonials /> */}
       <Footer />
-      {/* <Thumbnails /> */}
+
       {/* <SocialLinks /> */}
     </div>
   );

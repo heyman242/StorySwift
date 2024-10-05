@@ -22,12 +22,13 @@ const Footer = () => {
   return (
     <div
       name="Contact"
-      className="mx-auto bg-[#090517ff] text-[#ffffff] py-8 text-center"
+      className="mx-auto bg-[#090517ff] text-[#ffffff] text-center"
     >
-      <p className="text-3xl sm:text-5xl mb-8">
-        <span className="text-[#fce54d]">100% RETURN&nbsp;</span> if we don't{" "}
+      <p className="text-base sm:text-base mb-6">
+        {/* <span className="text-[#fce54d]">100% RETURN&nbsp;</span> if we don't{" "}
         <span className="text-[#fce54d]">&nbsp;BEAT </span> your existing{" "}
-        <span className="text-[#fce54d]">&nbsp;RESULT!&nbsp;</span>
+        <span className="text-[#fce54d]">&nbsp;RESULT!&nbsp;</span> */}
+        © 2024 Story Swift. All Rights Reserved.
       </p>
     </div>
   );
