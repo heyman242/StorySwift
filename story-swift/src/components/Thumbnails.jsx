@@ -10,15 +10,15 @@ import thumbnail8 from "../assets/thumbnail-8.png";
 import thumbnail9 from "../assets/thumbnail-9.png";
 
 const thumbnails = [
-  { id: 1, image: thumbnail1, name: "Video 1", title: "Description 1" },
-  { id: 2, image: thumbnail2, name: "Video 2", title: "Description 2" },
-  { id: 3, image: thumbnail3, name: "Video 3", title: "Description 3" },
-  { id: 4, image: thumbnail4, name: "Video 4", title: "Description 4" },
-  { id: 5, image: thumbnail5, name: "Video 5", title: "Description 5" },
+  { id: 4, image: thumbnail1, name: "Video 1", title: "Description 1" },
+  { id: 7, image: thumbnail2, name: "Video 2", title: "Description 2" },
+  { id: 5, image: thumbnail3, name: "Video 3", title: "Description 3" },
+  { id: 8, image: thumbnail4, name: "Video 4", title: "Description 4" },
+  { id: 9, image: thumbnail5, name: "Video 5", title: "Description 5" },
   { id: 6, image: thumbnail6, name: "Video 6", title: "Description 6" },
-  { id: 7, image: thumbnail7, name: "Video 7", title: "Description 7" },
-  { id: 8, image: thumbnail8, name: "Video 8", title: "Description 8" },
-  { id: 9, image: thumbnail9, name: "Video 9", title: "Description 9" },
+  { id: 3, image: thumbnail7, name: "Video 7", title: "Description 7" },
+  { id: 2, image: thumbnail8, name: "Video 8", title: "Description 8" },
+  { id: 1, image: thumbnail9, name: "Video 9", title: "Description 9" },
 ];
 
 const Thumbnails = () => {
