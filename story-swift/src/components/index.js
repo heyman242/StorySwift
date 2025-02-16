@@ -20,3 +20,4 @@ export { default as Results } from "./Results";
 export { default as LongForm } from "./LongForm";
 export { default as Faq1 } from "./Faq1";
 export { default as Team1 } from "./Team1";
+export { default as TrustedBy } from "./TrustedBy";

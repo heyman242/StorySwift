@@ -1,144 +1,101 @@
 import React, { useEffect, useState } from "react";
-import { shortForm, longForm, thumbnails } from "../constants";
-import { CarouselProvider, Slider, Slide, DotGroup } from "pure-react-carousel";
-import "pure-react-carousel/dist/react-carousel.es.css";
-import "./css/SampleWorkCarousel.css";
+import { DawnnaSF, JackSF, shortForm } from "../constants";
 import { Link } from "react-router-dom";
 
-const SampleWork = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); // Adjust the breakpoint as needed
+const VideoRow = ({ videos, name, dataAos = "flip-left" }) => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
-
     window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  return (
+    <div className="w-full mb-16">
+      <div className={`grid ${isMobile ? "grid-cols-1" : "grid-cols-4"} gap-4`}>
+        {videos.map((item) => (
+          <div
+            key={item.id}
+            className="rounded-lg overflow-hidden border border-white dark:border-gray-800 max-w-[280px] mx-auto w-full"
+            data-aos={dataAos}
+          >
+            <div
+              className="relative w-full"
+              style={{ paddingBottom: "177.78%" }}
+            >
+              <iframe
+                src={item.link}
+                title={`Video ${item.id}`}
+                className="absolute top-0 left-0 w-full h-full"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+                frameBorder="0"
+              />
+            </div>
+          </div>
+        ))}
+      </div>
+      {name && (
+        <div className="text-center mt-6">
+          <h2 className="text-2xl font-semibold text-white">{name}</h2>
+        </div>
+      )}
+    </div>
+  );
+};
+
+const SampleWork = () => {
   return (
     <div
       name="Work"
       className="bg-[#090517ff] text-[#f5ebdcff] flex justify-center mx-auto"
     >
-      <div className="flex flex-col items-center justify-center">
-        <br />
-        <br />
-
-        <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold px-4 leading-10 text-white  text-center">
-          Short From Videos
+      <div className="max-w-7xl w-full px-4 py-12">
+        <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold bg-gradient-to-r from-[#FF8C37] to-[#F53803] bg-clip-text text-transparent text-center mb-12">
+          Short Form Videos
         </h1>
-        <br />
-        <br />
-        <div
-          className={`grid grid-cols-${
-            isMobile ? "1" : "3"
-          } gap-6 md:grid-cols-3`}
-        >
-          {shortForm.map((item, index) => (
+
+        <VideoRow videos={DawnnaSF} name="Dawnna's Short Form Videos" />
+        <VideoRow videos={JackSF} name="Jack's Short Form Videos" />
+
+        <h2 className="text-3xl font-semibold text-white text-center mb-8">
+          More Short Form Videos
+        </h2>
+        <div className={`grid grid-cols-1 md:grid-cols-4 gap-4 mb-12`}>
+          {shortForm.map((item) => (
             <div
               key={item.id}
-              className="rounded-lg overflow-hidden border border-white dark:border-gray-800"
+              className="rounded-lg overflow-hidden border border-white dark:border-gray-800 max-w-[280px] mx-auto w-full"
               data-aos="flip-left"
             >
-              <iframe
-                src={item.link}
-                title={`Sample Work ${index + 1}`}
-                width="100%"
-                height={isMobile ? "530" : "530"} // Adjusted height for mobile
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
-                allowFullScreen
-              ></iframe>
-            </div>
-          ))}
-        </div>
-        <br />
-        <br />
-        <Link
-          to="/portfolio"
-          className="inline-block bg-[#a62321ff] py-3 px-8 rounded-xl text-lg font-semibold text-white uppercase tracking-wide hover:text-[#ffffff] hover:bg-[#8e1f1c] transform transition duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#a62321ff] focus:ring-opacity-50"
-        >
-          Show More
-        </Link>
-
-        {/* <br />
-        <br />
-        <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold px-4 leading-10 text-white  text-center">
-          Long From Videos
-        </h1>
-        <br />
-        <br />
-        <div
-          className={`grid grid-cols-${
-            isMobile ? "1" : "2"
-          } gap-6 md:grid-cols-2`}
-          style={{
-            width: isMobile ? "100px" : "1500px", // Adjusted width for mobile
-            height: isMobile ? "300px" : "414px", // Adjusted height for mobile
-          }}
-        >
-          {longForm.map((item, index) => (
-            <div
-              key={item.id}
-              className="rounded-lg overflow-hidden border border-white dark:border-gray-800"
-              data-aos="flip-left"
-            >
-              <iframe
-                src={item.link}
-                style={{
-                  width: "100%",
-                  height: "100%",
-                }}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-                title=""
-              ></iframe>
-            </div>
-          ))}
-        </div>
-
-        <br />
-        <br />
-        <div className="flex flex-col items-center justify-center">
-          <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold px-4 leading-10 text-white  text-center">
-            Thumbnails
-          </h1>
-          <br />
-          <br />
-          <div className="carousel">
-            <CarouselProvider
-              naturalSlideWidth={100}
-              isIntrinsicHeight={true}
-              totalSlides={thumbnails.length} // Total slides based on thumbnails data length
-              visibleSlides={1} // Adjust the number of visible slides per view
-              step={1}
-              infinite={true}
-              isPlaying={true} // Enable auto-sliding
-              interval={3000}
-            >
-              <div className="w-full relative">
-                <Slider>
-                  {thumbnails.map((image, index) => (
-                    <Slide key={index} index={index}>
-                      <div className="flex justify-center items-center">
-                        <img
-                          src={image.link}
-                          alt={`Slide ${index + 1}`}
-                          className="object-cover object-center w-6/12 h-2/5" // Adjust the width and height as needed
-                        />
-                      </div>
-                    </Slide>
-                  ))}
-                </Slider>
-                <DotGroup className="carousel__dot-group" />
+              <div
+                className="relative w-full"
+                style={{ paddingBottom: "177.78%" }}
+              >
+                <iframe
+                  src={item.link}
+                  title={`Sample Work ${item.id}`}
+                  className="absolute top-0 left-0 w-full h-full"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
               </div>
-            </CarouselProvider>
-          </div>
-        </div> */}
+            </div>
+          ))}
+        </div>
+
+        <div className="flex justify-center">
+          <Link
+            to="/portfolio"
+            className="inline-block bg-[#a62321ff] py-3 px-8 rounded-xl text-lg font-semibold text-white uppercase tracking-wide hover:text-[#ffffff] hover:bg-[#8e1f1c] transform transition duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#a62321ff] focus:ring-opacity-50"
+          >
+            Show More
+          </Link>
+        </div>
       </div>
     </div>
   );

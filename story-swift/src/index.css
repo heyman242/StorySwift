@@ -4,3 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .bg-gradient-radial {
+    background-image: radial-gradient(
+      circle at center,
+      var(--tw-gradient-from) 0%,
+      var(--tw-gradient-via) 25%,
+      var(--tw-gradient-to) 100%
+    );
+  }
+}

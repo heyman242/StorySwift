@@ -20,6 +20,7 @@ import {
   LongForm,
   Faq1,
   Team1,
+  TrustedBy,
 } from "./index";
 
 const HomeLayout = () => {
@@ -29,10 +30,11 @@ const HomeLayout = () => {
       <Home />
       <Vsl />
       <br />
-      <br />
       <CallToAction />
+      <br />
+      <TrustedBy />
       <Results />
-      <Dms />
+      {/*<Dms />*/}
       {/* <Offer /> */}
       <LongForm />
       <Thumbnails />
