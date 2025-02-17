@@ -41,7 +41,7 @@ const HomeLayout = () => {
       {/* <Testimonial /> */}
       <Team1 />
       <Calendly />
-      <Faq1 />
+      {/* <Faq1 /> */}
       <Footer />
     </div>
   );
