@@ -3,7 +3,7 @@ import { longform } from "../constants";
 
 const LongForm = () => {
   return (
-    <div className="bg-[#090517] py-16">
+    <div name="Long-Form" className="bg-[#090517] py-16">
       <div className="container mx-auto px-4">
         <div className="flex justify-center mb-8">
           <div className="relative group">

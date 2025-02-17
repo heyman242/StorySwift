@@ -3,7 +3,7 @@ import { thumbnails } from "../constants";
 
 const Thumbnails = () => {
   return (
-    <div className="bg-[#090517] py-12">
+    <div name="Thumbnails" className="bg-[#090517] py-12">
       <div className="max-w-auto mx-auto px-4">
         <div className="flex justify-center mb-8">
           <div className="relative group">

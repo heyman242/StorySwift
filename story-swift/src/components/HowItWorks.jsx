@@ -75,7 +75,10 @@ const HowItWorks = () => {
   };
 
   return (
-    <div className="bg-[#090517] min-h-screen text-white py-10 px-4">
+    <div
+      name="Process"
+      className="bg-[#090517] min-h-screen text-white py-10 px-4"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
           <motion.div className="inline-block px-6 py-3">

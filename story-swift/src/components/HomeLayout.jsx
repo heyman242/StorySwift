@@ -9,14 +9,8 @@ import {
   Testimonial,
   Results,
   Vsl,
-  Dms,
-  YourWork,
-  SocialLinks,
-  NewTestimonials,
   HowItWorks,
-  Team,
   Thumbnails,
-  Offer,
   LongForm,
   Faq1,
   Team1,
@@ -35,8 +29,6 @@ const HomeLayout = () => {
       <TrustedBy />
       <Results />
       <CallToAction variant="results" />
-      {/*<Dms />*/}
-      {/* <Offer /> */}
       <LongForm />
       <CallToAction variant="longform" />
       <Thumbnails />
@@ -47,15 +39,10 @@ const HomeLayout = () => {
       <br />
       <HowItWorks />
       {/* <Testimonial /> */}
-      {/* <YourWork /> */}
-      {/* <Team /> */}
       <Team1 />
-      {/* <Faq1 /> */}
       <Calendly />
-      {/* <NewTestimonials /> */}
+      <Faq1 />
       <Footer />
-
-      {/* <SocialLinks /> */}
     </div>
   );
 };

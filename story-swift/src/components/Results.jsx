@@ -17,7 +17,7 @@ const Results = () => {
 
   return (
     <div
-      name="Testimonials"
+      name="Results"
       className="bg-[#090517ff] flex justify-center items-center w-full"
     >
       <div className="flex flex-col items-center justify-center px-20 py-4">

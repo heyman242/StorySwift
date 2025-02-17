@@ -50,7 +50,7 @@ const VideoRow = ({ videos, name, dataAos = "flip-left" }) => {
 const SampleWork = () => {
   return (
     <div
-      name="Work"
+      name="Short-Form"
       className="bg-[#090517ff] text-[#f5ebdcff] flex justify-center mx-auto"
     >
       <div className="max-w-7xl w-full px-4 py-12">

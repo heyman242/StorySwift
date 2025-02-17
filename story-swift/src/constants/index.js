@@ -5,19 +5,23 @@ export const links = [
   },
   {
     id: 2,
-    link: "Results",
+    link: "Process",
   },
   {
     id: 3,
-    link: "Long-Form",
+    link: "Results",
   },
   {
     id: 4,
-    link: "Thumbnails",
+    link: "Long-Form",
   },
   {
     id: 5,
-    link: "ShortForm",
+    link: "Short-Form",
+  },
+  {
+    id: 6,
+    link: "Thumbnails",
   },
 ];
 

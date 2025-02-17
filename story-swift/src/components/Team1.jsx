@@ -71,8 +71,8 @@ const Team1 = () => {
                         <img
                           src={
                             member.avatar === "image1"
-                              ? "/src/assets/saurabh.png"
-                              : "/src/assets/himanshu.jpeg"
+                              ? "https://res.cloudinary.com/drdom0aht/image/upload/f_auto,q_auto/alxj0hnhdasc8lr9ki3a"
+                              : "https://res.cloudinary.com/drdom0aht/image/upload/f_auto,q_auto/qqqep8nqemhhgjkibb19"
                           }
                           alt={member.name}
                           className="w-full h-full object-cover object-center  transform transition-transform duration-500 group-hover:scale-110"
