@@ -6,43 +6,41 @@ import {
   Home,
   NavBar,
   SampleWork,
-  Testimonial,
   Results,
   Vsl,
   HowItWorks,
   Thumbnails,
   LongForm,
-  Faq1,
   Team1,
   TrustedBy,
 } from "./index";
 
 const HomeLayout = () => {
   return (
-    <div className="overflow-x-hidden bg-[#090517ff] ">
+    <div className="min-h-screen bg-[#090517ff] relative">
       <NavBar />
-      <Home />
-      <Vsl />
-      <br />
-      <CallToAction variant="vsl" />
-      <br />
-      <TrustedBy />
-      <Results />
-      <CallToAction variant="results" />
-      <LongForm />
-      <CallToAction variant="longform" />
-      <Thumbnails />
-      <CallToAction variant="thumbnail" />
-      <SampleWork />
-      <CallToAction variant="samplework" />
-      <br />
-      <br />
-      <HowItWorks />
-      {/* <Testimonial /> */}
-      <Team1 />
-      <Calendly />
-      {/* <Faq1 /> */}
-      <Footer />
+      <main className="w-full pt-20">
+        <Home />
+        <Vsl />
+        <br />
+        <CallToAction variant="vsl" />
+        <br />
+        <TrustedBy />
+        <Results />
+        <CallToAction variant="results" />
+        <LongForm />
+        <CallToAction variant="longform" />
+        <Thumbnails />
+        <CallToAction variant="thumbnail" />
+        <SampleWork />
+        <CallToAction variant="samplework" />
+        <br />
+        <br />
+        <HowItWorks />
+        <Team1 />
+        <Calendly />
+        <Footer />
+      </main>
     </div>
   );
 };

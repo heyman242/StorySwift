@@ -1,30 +1,9 @@
-import React, { useEffect, useState } from "react";
-import youtube from "../assets/youtube.svg";
-import twitter from "../assets/twitter.svg";
-import mail from "../assets/mail.svg";
-import whatsapp from "../assets/whatsapp.svg";
+import React from "react";
 
 const Footer = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); // Adjust the breakpoint as needed
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
-    <div
-      name="Contact"
-      className="mx-auto bg-[#090517ff] text-[#ffffff] text-center"
-    >
-      <p className="text-base sm:text-base mb-6">
+    <div className="w-full bg-[#090517] text-[#ffffff] py-6">
+      <p className="text-base text-center text-gray-400">
         © 2024 StorySwift. All Rights Reserved.
       </p>
     </div>

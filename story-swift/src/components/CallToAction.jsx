@@ -7,9 +7,9 @@ const CallToAction = ({ variant = "default" }) => {
     nav: "Book a Call",
     vsl: "Get Started",
     results: "I Want Same Results",
-    longform: "Get Free YouTube Video",
-    thumbnail: "Get Free Thumbnail",
-    samplework: "Get Free Short Form Video",
+    longform: "Get A Free YouTube Video",
+    thumbnail: "Get A Free Thumbnail",
+    samplework: "Get A Free Short Form Video",
     default: "Book A Discovery Call",
   };
 

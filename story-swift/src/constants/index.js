@@ -330,25 +330,26 @@ export const longform = [
   },
   {
     id: 2,
-    embedId: "4Isx2YhJulA",
-    name: "Mark Mei",
-    title: "Founder @ Dahaus Digital",
-    fade: "fade-right",
-  },
-  {
-    id: 3,
-    embedId: "IM4AUE1PQaA",
-    name: "Zach Schieffer",
-    title: "Founder @ ZHS Ecom",
-    fade: "fade-right",
-  },
-  {
-    id: 4,
     embedId: "Ja9OpaNsNrc",
     name: "Alexan Zartarian ",
     title: "Founder @ Sparklead",
     fade: "fade-left",
   },
+  {
+    id: 3,
+    embedId: "rpaVaSmr5bI",
+    name: "Nathan Hirsch",
+    title: "Co-Founder @ Outsource School",
+    fade: "fade-right",
+  },
+  {
+    id: 4,
+    embedId: "trDdCtQP5cM",
+    name: "Coloma Muro",
+    title: "Co-Founder @ Embodied Women Institute",
+    fade: "fade-right",
+  },
+
   {
     id: 5,
     embedId: "Q8GC9McX5Kw",
@@ -365,16 +366,16 @@ export const longform = [
   },
   {
     id: 7,
-    embedId: "rpaVaSmr5bI",
-    name: "Nathan Hirsch",
-    title: "Co-Founder @ Outsource School",
+    embedId: "IM4AUE1PQaA",
+    name: "Zach Schieffer",
+    title: "Founder @ ZHS Ecom",
     fade: "fade-right",
   },
   {
     id: 8,
-    embedId: "trDdCtQP5cM",
-    name: "Coloma Muro",
-    title: "Co-Founder @ Embodied Women Institute",
+    embedId: "4Isx2YhJulA",
+    name: "Mark Mei",
+    title: "Founder @ Dahaus Digital",
     fade: "fade-right",
   },
   {
