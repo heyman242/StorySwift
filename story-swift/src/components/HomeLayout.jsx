@@ -30,16 +30,19 @@ const HomeLayout = () => {
       <Home />
       <Vsl />
       <br />
-      <CallToAction />
+      <CallToAction variant="vsl" />
       <br />
       <TrustedBy />
       <Results />
+      <CallToAction variant="results" />
       {/*<Dms />*/}
       {/* <Offer /> */}
       <LongForm />
+      <CallToAction variant="longform" />
       <Thumbnails />
-      <CallToAction />
+      <CallToAction variant="thumbnail" />
       <SampleWork />
+      <CallToAction variant="samplework" />
       <br />
       <br />
       <HowItWorks />

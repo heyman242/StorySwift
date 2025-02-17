@@ -21,3 +21,4 @@ export { default as LongForm } from "./LongForm";
 export { default as Faq1 } from "./Faq1";
 export { default as Team1 } from "./Team1";
 export { default as TrustedBy } from "./TrustedBy";
+export { default as AnimatedCTAButton } from "./AnimatedCTAButton";

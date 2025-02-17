@@ -4,173 +4,220 @@ import { motion } from "framer-motion";
 const HowItWorks = () => {
   const steps = [
     {
-      title: "Build Your Gameplan",
+      title: "Building Your Gameplan",
       description:
-        "We build out your 90-day content strategy & develop your style",
-      tags: ["#strategy", "#planning", "#content"],
+        "We dive deep and take a look at what's currently performing in your industry, what has the highest potential to performing, and we find a unique angle to take for your video.",
+      metrics: ["Content Strategy"],
       icon: "🎯",
-      accent: "from-[#ff6b6b] to-[#ffd93d]",
+      accent: "from-[#FF8C37] to-[#F53803]",
     },
     {
-      title: "Create Content",
-      description: "We create everything from the scripts to posting videos",
+      title: "Scripting",
+      description:
+        "We perform extensive research on your niche and your brand in order to nail your voice and speak effectively to your audience.",
+      metrics: ["Hook Creation", "Story Structure", "Call-to-Actions"],
+      icon: "✍️",
+      accent: "from-[#FF8C37] to-[#F53803]",
+    },
+    {
+      title: "Post Production",
       tasks: [
-        { name: "Video Script", status: "complete", tag: "#build" },
-        { name: "Thumbnail Design", status: "pending", tag: "#design" },
-        { name: "Video Editing", status: "pending", tag: "#create" },
-        { name: "Posting Videos", status: "pending", tag: "#launch" },
+        { name: "Thumbnail Design", tag: "#design" },
+        { name: "Video Editing", tag: "#create" },
+        { name: "SEO Optimization", tag: "#rank" },
+        { name: "Posting Videos", tag: "#launch" },
       ],
       icon: "🎬",
-      accent: "from-[#4facfe] to-[#00f2fe]",
+      accent: "from-[#FF8C37] to-[#F53803]",
     },
     {
       title: "Enjoy Results",
       description: "Build an audience and turn them into booked calls",
       metrics: [
         "Booked Call",
-        "New Subscriber",
         "1/10 Video",
         "+1,000 Subscribers",
         "Found on YouTube",
-        "New Client",
       ],
       icon: "📈",
-      accent: "from-[#43e97b] to-[#38f9d7]",
+      accent: "from-[#FF8C37] to-[#F53803]",
     },
   ];
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.3,
-      },
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+    hover: {
+      scale: 1.02,
+      transition: { duration: 0.3 },
     },
   };
 
-  const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
+  const taskVariants = {
+    hidden: { opacity: 0, x: -20 },
+    visible: { opacity: 1, x: 0 },
+  };
+
+  const iconVariants = {
+    hidden: { scale: 0 },
     visible: {
-      y: 0,
-      opacity: 1,
+      scale: 1,
       transition: {
-        duration: 0.5,
+        type: "spring",
+        stiffness: 260,
+        damping: 20,
       },
+    },
+    hover: {
+      rotate: [0, -10, 10, -10, 0],
+      transition: { duration: 0.5 },
     },
   };
 
   return (
-    <div className="bg-[#090517] min-h-screen text-white py-16 px-4">
-      <div className="max-w-6xl mx-auto">
+    <div className="bg-[#090517] min-h-screen text-white py-10 px-4">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-block px-6 py-3 bg-gray-900/50 rounded-full mb-6 backdrop-blur-lg border border-gray-800"
-          >
-            <span className="text-gray-400 font-medium">How it works?</span>
+          <motion.div className="inline-block px-6 py-3">
+            <button
+              className="px-8 py-3 bg-black text-white relative z-10 rounded-full
+                             before:absolute before:inset-0 before:-z-10 before:rounded-full
+                             before:bg-gradient-to-r before:from-[#FF8C37] before:to-[#F53803]
+                             before:p-[2px] before:content-[''] after:absolute after:inset-[2px]
+                             after:-z-10 after:rounded-full after:bg-black after:content-['']
+                             group-hover:before:opacity-80 transition-all duration-300
+                             shadow-[0_0_10px_rgba(255,140,55,0.3)]
+                             group-hover:shadow-[0_0_20px_rgba(255,140,55,0.5)]
+                             group-hover:scale-105
+                             [box-shadow:inset_0_2px_15px_rgba(0,0,0,0.7),0_0_10px_rgba(255,140,55,0.3)]
+                             group-hover:[box-shadow:inset_0_2px_15px_rgba(0,0,0,0.7),0_0_20px_rgba(255,140,55,0.5)]"
+            >
+              <span className="text-2xl sm:text-2xl font-medium">
+                How It Works
+              </span>
+            </button>
           </motion.div>
+
           <motion.h2
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-6xl font-bold mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent"
+            className="text-6xl font-bold mb-6 text-white bg-clip-text text-transparent"
           >
             Our 3 Step Process
           </motion.h2>
+
           <motion.h3
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="text-3xl text-gray-400"
+            className="text-3xl text-white"
           >
             To Book Calls From YouTube
           </motion.h3>
         </div>
 
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-          className="grid grid-cols-1 md:grid-cols-3 gap-8"
-        >
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           {steps.map((step, index) => (
             <motion.div
               key={index}
-              variants={itemVariants}
+              variants={cardVariants}
+              initial="hidden"
+              animate="visible"
+              whileHover="hover"
+              transition={{
+                duration: 0.5,
+                delay: index * 0.1,
+                type: "spring",
+                stiffness: 100,
+              }}
               className="relative group"
             >
-              <div
-                className="absolute inset-0 bg-gradient-to-r opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-xl"
-                style={{
-                  background: `linear-gradient(to right, ${step.accent})`,
-                }}
-              />
-              <div className="relative bg-gray-900/40 backdrop-blur-xl border border-gray-800 rounded-xl p-8 h-full hover:border-gray-700 transition-all duration-300 hover:transform hover:-translate-y-1">
-                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r rounded-t-xl opacity-20 ${step.accent}" />
+              <div className="relative overflow-hidden rounded-3xl border border-transparent bg-gradient-to-r from-[#ffffff] to-[#c5c5c5] p-[1px] h-full">
+                <div className="relative bg-[#151515] rounded-3xl p-8 h-full backdrop-blur-xl">
+                  <motion.div
+                    variants={iconVariants}
+                    whileHover="hover"
+                    className="text-4xl mb-8 bg-gradient-to-r from-[#FF8C37] to-[#F53803] w-16 h-16 rounded-2xl flex items-center justify-center"
+                  >
+                    {step.icon}
+                  </motion.div>
 
-                <div className="text-4xl mb-6 bg-gray-800/50 w-16 h-16 rounded-xl flex items-center justify-center">
-                  {step.icon}
+                  <motion.h3 className="text-2xl font-bold mb-6 bg-gradient-to-r from-[#FF8C37] to-[#F53803] bg-clip-text text-transparent">
+                    {step.title}
+                  </motion.h3>
+
+                  {step.description && (
+                    <motion.p
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ delay: 0.2 }}
+                      className="text-white mb-6 text-lg leading-relaxed"
+                    >
+                      {step.description}
+                    </motion.p>
+                  )}
+
+                  {step.tasks && (
+                    <div className="space-y-4">
+                      {step.tasks.map((task, taskIndex) => (
+                        <motion.div
+                          key={taskIndex}
+                          variants={taskVariants}
+                          initial="hidden"
+                          animate="visible"
+                          transition={{ delay: 0.3 + taskIndex * 0.1 }}
+                          whileHover={{ scale: 1.02 }}
+                          className="flex items-center bg-gray-800/30 rounded-lg p-4 hover:bg-gray-800/50 transition-colors duration-300"
+                        >
+                          <span className="font-medium text-gray-300 text-lg">
+                            {task.name}
+                          </span>
+                          <span className="ml-auto text-[#FF8C37] text-sm">
+                            {task.tag}
+                          </span>
+                        </motion.div>
+                      ))}
+                    </div>
+                  )}
+
+                  {step.metrics && (
+                    <motion.div
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ delay: 0.4 }}
+                      className="flex flex-wrap gap-3"
+                    >
+                      {step.metrics.map((metric, metricIndex) => (
+                        <motion.span
+                          key={metricIndex}
+                          whileHover={{ scale: 1.05 }}
+                          className="px-4 py-2 bg-gray-800/30 rounded-full text-base font-medium text-gray-300 hover:bg-gray-800/50 transition-colors duration-300"
+                        >
+                          {metric}
+                        </motion.span>
+                      ))}
+                    </motion.div>
+                  )}
                 </div>
-
-                <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r bg-clip-text text-transparent from-white to-gray-300">
-                  {step.title}
-                </h3>
-                <p className="text-gray-400 mb-6 text-lg">{step.description}</p>
-
-                {step.tasks && (
-                  <div className="space-y-3">
-                    {step.tasks.map((task, taskIndex) => (
-                      <div
-                        key={taskIndex}
-                        className="flex items-center bg-gray-800/50 backdrop-blur-sm rounded-lg p-4 border border-gray-800 hover:border-gray-700 transition-colors duration-200"
-                      >
-                        <div
-                          className={`w-2 h-2 rounded-full mr-3 ${
-                            task.status === "complete"
-                              ? "bg-green-500"
-                              : "bg-gray-600"
-                          }`}
-                        />
-                        <span className="font-medium">{task.name}</span>
-                        <span className="ml-auto text-gray-500 text-sm">
-                          {task.tag}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                )}
-
-                {step.metrics && (
-                  <div className="flex flex-wrap gap-2 mt-6">
-                    {step.metrics.map((metric, metricIndex) => (
-                      <span
-                        key={metricIndex}
-                        className="px-4 py-2 bg-gray-800/50 backdrop-blur-sm rounded-full text-sm font-medium border border-gray-800 hover:border-gray-700 transition-colors duration-200"
-                      >
-                        {metric}
-                      </span>
-                    ))}
-                  </div>
-                )}
-
-                {step.tags && (
-                  <div className="flex flex-wrap gap-3 mt-6">
-                    {step.tags.map((tag, tagIndex) => (
-                      <span
-                        key={tagIndex}
-                        className="text-gray-400 text-sm font-medium hover:text-gray-300 transition-colors duration-200"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                )}
               </div>
             </motion.div>
           ))}
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.8 }}
+          whileHover={{ scale: 1.05 }}
+          className="text-center mt-16"
+        >
+          <h4 className="text-5xl font-bold">
+            All you have to do is{" "}
+            <span className="bg-gradient-to-r from-[#FF8C37] to-[#F53803] bg-clip-text text-transparent">
+              RECORD!!!
+            </span>
+          </h4>
         </motion.div>
       </div>
     </div>

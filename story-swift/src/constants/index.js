@@ -5,11 +5,19 @@ export const links = [
   },
   {
     id: 2,
-    link: "Testimonials",
+    link: "Results",
   },
   {
     id: 3,
-    link: "Work",
+    link: "Long-Form",
+  },
+  {
+    id: 4,
+    link: "Thumbnails",
+  },
+  {
+    id: 5,
+    link: "ShortForm",
   },
 ];
 

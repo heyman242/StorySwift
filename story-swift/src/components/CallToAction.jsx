@@ -1,24 +1,140 @@
 import React from "react";
-import { Link } from "react-scroll";
+import AnimatedCTAButton from "./AnimatedCTAButton";
 
-const CallToAction = () => {
+const CallToAction = ({ variant = "default" }) => {
+  // Button text variants
+  const buttonText = {
+    nav: "Book a Call",
+    vsl: "Get Started",
+    results: "I Want Same Results",
+    longform: "Get Free YouTube Video",
+    thumbnail: "Get Free Thumbnail",
+    samplework: "Get Free Short Form Video",
+    default: "Book A Discovery Call",
+  };
+
   return (
-    <div className="bg-[#090517ff] ">
-      <div className="bg-[#090517ff] flex flex-col items-center text-[#ffffff] text-3xl">
-        <Link
+    <div className="bg-[#090517ff]">
+      <div className="bg-[#090517ff] flex flex-col items-center text-[#ffffff] text-3xl py-6">
+        <AnimatedCTAButton
+          text={buttonText[variant]}
           to="Book A Discovery Call"
-          smooth
-          duration={500}
-          className="cursor-pointer capitalize inline-block bg-[#a62321ff] py-2 px-6 rounded-xl hover:text-[#ffffff] hover:scale-110 transition duration-300"
-        >
-          Book A Discovery Call
-        </Link>
-        {/* <p className="text-center text-xl text-[#f5c947] mt-4">
-          And get a Video Edited, Thumbnail and a Video Script (For Free).
-        </p> */}
+        />
       </div>
     </div>
   );
 };
 
 export default CallToAction;
+
+/* From Uiverse.io by mobinkakei */
+// button {
+//   position: relative;
+//   margin: 0;
+//   padding: 17px 35px;
+//   outline: none;
+//   text-decoration: none;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   cursor: pointer;
+//   text-transform: uppercase;
+//   background-color: #fff;
+//   border: 1px solid rgba(22, 76, 167, 0.6);
+//   border-radius: 10px;
+//   color: #1d89ff;
+//   font-weight: 400;
+//   font-family: inherit;
+//   z-index: 0;
+//   overflow: hidden;
+//   transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+// }
+
+// button span {
+//   color: #164ca7;
+//   font-size: 14px;
+//   font-weight: 500;
+//   letter-spacing: 0.7px;
+// }
+
+// button:hover {
+//   animation: rotate624 0.7s ease-in-out both;
+// }
+
+// button:hover span {
+//   animation: storm1261 0.7s ease-in-out both;
+//   animation-delay: 0.06s;
+// }
+
+// @keyframes rotate624 {
+//   0% {
+//     transform: rotate(0deg) translate3d(0, 0, 0);
+//   }
+
+//   25% {
+//     transform: rotate(3deg) translate3d(0, 0, 0);
+//   }
+
+//   50% {
+//     transform: rotate(-3deg) translate3d(0, 0, 0);
+//   }
+
+//   75% {
+//     transform: rotate(1deg) translate3d(0, 0, 0);
+//   }
+
+//   100% {
+//     transform: rotate(0deg) translate3d(0, 0, 0);
+//   }
+// }
+
+// @keyframes storm1261 {
+//   0% {
+//     transform: translate3d(0, 0, 0) translateZ(0);
+//   }
+
+//   25% {
+//     transform: translate3d(4px, 0, 0) translateZ(0);
+//   }
+
+//   50% {
+//     transform: translate3d(-3px, 0, 0) translateZ(0);
+//   }
+
+//   75% {
+//     transform: translate3d(2px, 0, 0) translateZ(0);
+//   }
+
+//   100% {
+//     transform: translate3d(0, 0, 0) translateZ(0);
+//   }
+// }
+
+// .btn-shine {
+//   border: 1px solid;
+//   overflow: hidden;
+//   position: relative;
+// }
+
+// .btn-shine span {
+//   z-index: 20;
+// }
+
+// .btn-shine:after {
+//   background: #38ef7d;
+//   content: "";
+//   height: 155px;
+//   left: -75px;
+//   opacity: 0.4;
+//   position: absolute;
+//   top: -50px;
+//   transform: rotate(35deg);
+//   transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+//   width: 50px;
+//   z-index: -10;
+// }
+
+// .btn-shine:hover:after {
+//   left: 120%;
+//   transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+// }
