@@ -344,7 +344,7 @@ export const longform = [
   },
   {
     id: 4,
-    embedId: "trDdCtQP5cM",
+    embedId: "hjOkKjXk0tI",
     name: "Coloma Muro",
     title: "Co-Founder @ Embodied Women Institute",
     fade: "fade-right",
@@ -380,9 +380,9 @@ export const longform = [
   },
   {
     id: 9,
-    embedId: "GkS0_BK_EcM",
-    name: "Saurabh Agarwal",
-    title: "Co-Founder @ StorySwift",
+    embedId: "DIIgSQkvozA",
+    name: "Joe Milnes",
+    title: "Founder @ Revitk",
     fade: "fade-right",
   },
 ];
